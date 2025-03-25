@@ -9,11 +9,10 @@ import altair as alt
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+
 
 # Initialize Groq client
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key="YOUR_GROQ_API_KEY")
 
 # Set page configuration
 st.set_page_config(
